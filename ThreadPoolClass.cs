@@ -27,7 +27,7 @@ namespace ThreadStudy
             Console.WriteLine($"Hi {data.Name} from ThreadPool.");
             Thread.Sleep(1000);
         }
-        static void Main(string[] args)
+        void Main()
         {
             // Use ThreadPool for a worker thread        
             ThreadPool.QueueUserWorkItem(BackgroundTask);
